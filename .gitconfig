@@ -1,0 +1,12 @@
+[alias]
+	st = status
+	cm = commit
+	co = checkout
+	br = branch
+	fc = fetch
+	pl = pull
+	ps = push 
+[color]
+	status = auto
+	branch = auto
+	ui = true
