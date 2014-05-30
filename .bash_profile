@@ -7,3 +7,8 @@ for file in ~/.{exports,aliases,personal}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
+
+if [ -f ~/.git-completion.bash ]; then
+  . ~/.git-completion.bash
+fi
+
