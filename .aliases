@@ -1,0 +1,12 @@
+# List Directories With Color
+alias ls="ls -alG"
+alias lf="ls -alFG"
+
+# Make Google Chrome Allow Cross Origin
+alias acochrome="open -a Google\ Chrome --args --disable-web-security"
+
+# Flush Directory Service cache
+alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
+
+# Get Current Timestamp
+alias timestamp="date +%s"
