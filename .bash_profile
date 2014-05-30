@@ -3,7 +3,7 @@ export PATH="$HOME/bin:$PATH"
 
 # Load the shell dotfiles, and then some:
 # * ~/.path can be used to extend `$PATH`.
-for file in ~/.{exports,aliases}; do
+for file in ~/.{exports,aliases,personal}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
