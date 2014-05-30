@@ -8,7 +8,7 @@ for file in ~/.{exports,aliases,personal}; do
 done
 unset file
 
-if [ -f ~/.git-completion.bash ]; then
-  . ~/.git-completion.bash
+if [ -f ~/.scripts/.git-completion.bash ]; then
+  . ~/.scripts/.git-completion.bash
 fi
 
