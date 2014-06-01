@@ -6,7 +6,7 @@ cd "$(dirname "${BASH_SOURCE}")"
 git pull origin master
 
 # get git-completion script from git repo on github.
-curl https://raw.githubusercontent.com/git/git/master/contrib/completion/.git-completion.bash -o ./.scripts/.git-completion.bash
+curl https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash -o ./.scripts/git-completion.bash
 
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
