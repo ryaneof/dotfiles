@@ -9,6 +9,10 @@ done
 unset file
 
 if [ -f ~/.scripts/git-completion.bash ]; then
-  . ~/.scripts/git-completion.bash
+	. ~/.scripts/git-completion.bash
 fi
 
+if [ -d ~/.rbenv/ ]; then
+	export PATH="$HOME/.rbenv/bin:$PATH"
+	eval "$(rbenv init -)"
+fi
