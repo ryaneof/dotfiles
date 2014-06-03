@@ -4,7 +4,15 @@ Inspired by [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles.g
 
 ## Installation
 
-`cd` into your local `dotfiles` repository, you may edit `.personal` to fit your own needs, and then
+`cd` into your local `dotfiles` repository, you may edit `./.personal` to fit your own needs, an example `.personal` file might like this
+
+```bash
+# Personal Config
+git config --global user.name "your name"
+git config --global user.email "your@example.com"
+```
+
+And then
 
 ```bash
 source bootstrap.sh
