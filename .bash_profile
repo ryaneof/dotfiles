@@ -16,3 +16,7 @@ if [ -d ~/.rbenv/ ]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
 fi
+
+if type "npm" > /dev/null; then
+	npm completion >> ~/.bash_profile
+fi
