@@ -1,22 +1,19 @@
-# My Workspace Configuration for Mac OS X.
+# A Web Developer's dotfiles on Mac OS X.
 
 Inspired by [mathiasbynens/dotfiles](https://github.com/mathiasbynens/dotfiles.git)
 
 ## Installation
 
-`cd` into your local `dotfiles` repository, you may edit `./.personal` to fit your own needs, an example `.personal` file might like this
+1. `git clone https://github.com/ryaneof/dotfiles.git`
+2. `cd dotfiles`, you may edit `./.personal` to fit your own needs, an example:
 
 ```bash
-# Personal Config
+# .personal
 git config --global user.name "your name"
 git config --global user.email "your@example.com"
 ```
 
-And then
-
-```bash
-source bootstrap.sh
-```
+3. `source bootstrap.sh` and enter `y` to continue.
 
 ## License
 
