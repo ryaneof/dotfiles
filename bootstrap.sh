@@ -10,6 +10,11 @@ if type "npm" > /dev/null; then
 	npm completion > ./.scripts/npm-completion.bash
 fi
 
+# if grunt-cli is installed, update grunt-completion
+if type "grunt" > /dev/null; then
+	grunt --completion=bash > ./.scripts/grunt-completion.bash
+fi
+
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "readme.md" -avh --no-perms . ~

@@ -7,13 +7,9 @@ for file in ~/.{exports,aliases,personal,}; do
 done
 unset file
 
-if [ -f ~/.scripts/git-completion.bash ]; then
-	. ~/.scripts/git-completion.bash
-fi
-
-if [ -f ~/.scripts/npm-completion.bash ]; then
-	. ~/.scripts/npm-completion.bash
-fi
+for file in ./.scripts/*.bash; do
+	[ -r "$file" ] && [ -f "$file" ] && source "$file"
+done
 
 if [ -d ~/.rbenv/ ]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
