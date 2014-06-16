@@ -1,6 +1,11 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/.bin:$PATH"
 
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
 # Load the shell dotfiles, and then some:
 for file in ~/.{exports,aliases,personal,}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"

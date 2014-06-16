@@ -1,6 +1,24 @@
-# List Directories With Color
-alias ls="ls -alG"
-alias lf="ls -alFG"
+# Easier navigation: .., ..., ...., ....., ~ and -
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+alias ~="cd ~" # `cd` is probably faster to type though
+alias -- -="cd -"
+
+# Detect which `ls` flavor is in use
+if ls --color > /dev/null 2>&1; then # GNU `ls`
+	colorflag="--color"
+else # OS X `ls`
+	colorflag="-G"
+fi
+
+# List all files colorized in long format
+alias ls="ls -al ${colorflag}"
+alias lf="ls -alF ${colorflag}"
+
+# List only directories
+alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
 # Make Google Chrome Allow Cross Origin
 alias acochrome="open -a Google\ Chrome --args --disable-web-security"
