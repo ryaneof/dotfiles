@@ -20,6 +20,12 @@ alias lf="ls -alF ${colorflag}"
 # List only directories
 alias lsd="ls -lF ${colorflag} | grep --color=never '^d'"
 
+# List Sub-directory Structures under current directory
+alias dtr="find . -type d | sed -e 's;[^/]*/;|--;g;s;--|; |;g'"
+
+# List All Files in tree under current directory
+alias dftr="find . | sed -e 's;[^/]*/;|--;g;s;--|; |;g'"
+
 # Make Google Chrome Allow Cross Origin
 alias acochrome="open -a Google\ Chrome --args --disable-web-security"
 
