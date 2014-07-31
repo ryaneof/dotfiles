@@ -1,0 +1,3 @@
+del () { 
+	command mv "$@" ~/.Trash; 
+} 
