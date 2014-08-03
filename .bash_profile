@@ -7,7 +7,7 @@ if [ -f /etc/bashrc ]; then
 fi
 
 # Load the shell dotfiles, and then some:
-for file in ~/.{exports,aliases,personal,}; do
+for file in ~/.{exports,aliases,functions,personal,}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file"
 done
 unset file
