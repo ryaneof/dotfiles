@@ -15,6 +15,11 @@ if type "grunt" > /dev/null; then
 	grunt --completion=bash > ./.scripts/grunt-completion.bash
 fi
 
+# if gulp is installed, update grunt-completion
+if type "gulp" > /dev/null; then
+	gulp --completion=bash > ./.scripts/gulp-completion.bash
+fi
+
 function doIt() {
 	rsync --exclude ".git/" --exclude ".DS_Store" --exclude "bootstrap.sh" \
 		--exclude "readme.md" -avh --no-perms . ~
