@@ -25,3 +25,4 @@ function _gulp_completions() {
 }
 
 complete -o default -F _gulp_completions gulp
+

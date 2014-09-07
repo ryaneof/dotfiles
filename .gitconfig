@@ -2,6 +2,7 @@
 	st = status
 	s = status -sb
 	cm = commit
+	df = diff
 	co = checkout
 	br = branch
 	fc = fetch
