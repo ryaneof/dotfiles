@@ -9,6 +9,7 @@
 	fc = fetch
 	pl = pull
 	ps = push 
+    latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 [color]
 	status = auto
 	branch = auto
