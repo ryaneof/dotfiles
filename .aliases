@@ -32,8 +32,11 @@ alias dftr="find . | sed -e 's;[^/]*/;|--;g;s;--|; |;g'"
 # Make Google Chrome Allow Cross Origin
 alias acochrome="open -a Google\ Chrome --args --disable-web-security"
 
-# Open files with iA Writer
-alias ia="open -a iA\ Writer"
+# Open files with iA Writer Pro
+alias ia="open -a iA\ Writer\ Pro"
+
+# Open files with iA Writer Pro
+alias md="open -a Marked\ 2"
 
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache && killall -HUP mDNSResponder"
