@@ -3,6 +3,7 @@
 	s = status -sb
 	ci = commit -m 
 	cm = commit
+	d = difftool
 	df = diff
 	co = checkout
 	br = branch
