@@ -21,4 +21,5 @@ if [ -d ~/.rbenv/ ]; then
 	eval "$(rbenv init -)"
 fi
 
-complete -F _git g
+complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
+    || complete -o default -o nospace -F _git g
