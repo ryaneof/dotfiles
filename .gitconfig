@@ -9,6 +9,7 @@
 	br = branch
 	fc = fetch
 	pl = pull
+	pr = pull --rebase
 	ps = push 
     latest = for-each-ref --sort=-committerdate --format='%(committerdate:short) %(refname:short)'
 [color]
