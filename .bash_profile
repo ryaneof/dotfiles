@@ -12,10 +12,6 @@ for file in ~/.{exports,aliases,functions,personal,}; do
 done
 unset file
 
-for file in ./.scripts/*.bash; do
-	[ -r "$file" ] && [ -f "$file" ] && source "$file"
-done
-
 if [ -d ~/.rbenv/ ]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
