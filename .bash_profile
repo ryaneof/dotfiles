@@ -16,6 +16,3 @@ if [ -d ~/.rbenv/ ]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
 fi
-
-complete -o bashdefault -o default -o nospace -F _git g 2>/dev/null \
-    || complete -o default -o nospace -F _git g

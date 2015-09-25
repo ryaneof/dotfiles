@@ -2,6 +2,7 @@
 	st = status
 	s = status -sb
 	ci = commit -m 
+	cl = clone
 	cm = commit
 	d = difftool
 	df = diff
