@@ -12,6 +12,10 @@ for file in ~/.{exports,aliases,functions,personal,}; do
 done
 unset file
 
+if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+	source "$(brew --prefix)/etc/bash_completion";
+fi;
+
 if [ -d ~/.rbenv/ ]; then
 	export PATH="$HOME/.rbenv/bin:$PATH"
 	eval "$(rbenv init -)"
