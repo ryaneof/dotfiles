@@ -1,5 +1,6 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/.bin:$PATH"
+export PATH="/usr/local/node/bin:$PATH";
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
