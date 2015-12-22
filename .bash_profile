@@ -13,7 +13,7 @@ for file in ~/.{exports,aliases,functions,personal,}; do
 done
 unset file
 
-if which brew > /dev/null && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+if type brew > /dev/null 2>&1 && [ -f "$(brew --prefix)/etc/bash_completion" ]; then
 	source "$(brew --prefix)/etc/bash_completion";
 fi;
 
