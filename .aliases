@@ -5,6 +5,7 @@ alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
+alias icloud="cd ~/Library/Mobile\ Documents/com~apple~CloudDocs" # OS X iCloud Drive Path
 
 # Easier Git
 alias g="git"
@@ -32,13 +33,13 @@ alias dftr="find . | sed -e 's;[^/]*/;|--;g;s;--|; |;g'"
 # Make Google Chrome Allow Cross Origin
 alias acochrome="open -a Google\ Chrome --args --disable-web-security"
 
-# Open files with iA Writer Pro
+# Open files with iA Writer
 alias ia="open -a iA\ Writer"
 
-# Open files with iA Writer Pro
+# Open files with Marked 2
 alias md="open -a Marked\ 2"
 
-# Open files with iA Writer Pro
+# Open files with Ulysses
 alias u="open -a Ulysses"
 
 # Flush Directory Service cache
