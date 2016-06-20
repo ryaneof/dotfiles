@@ -1,6 +1,7 @@
 # Add `~/bin` to the `$PATH`
 export PATH="$HOME/.bin:$PATH"
-export PATH="/usr/local/node/bin:$PATH";
+export PATH="/usr/local/node/bin:$GOPATH/bin:$PATH";
+export GOPATH=$HOME/go;
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
